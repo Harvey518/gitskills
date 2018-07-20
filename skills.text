@@ -1,0 +1,21 @@
+git config --global user.name "Your name"
+git config --global user.email "qiseven003@163.com"
+git init   创建仓库
+git add filename  将修改的文件添加至暂存区
+git commit -m "message"  讲缓存区的内容，以及修改备注添加至仓库
+git status 查看工作取得状态
+git diff 如果status告诉你有文件被修改过，则用该命令查看修改内容
+HEAD 指向的版本就是当前版本
+git reset --hard commit_id  回滚至commit_id对应的文件
+git log  查看提交历史，已确定要退回到那个版本
+git reflog 查看历史命令，以便确定要回到未来的哪个版本
+git 跟踪修改,每次修改如果不用git add到暂存区，那就不会加入到commit中
+git checkout -- file 修改文件但没有add到暂存区
+1.git reset HEAD file 回到add之前的文件 2.git checkout -- file 
+git rm file  删除一个文件，添加到暂存区
+git commit -m "remove test.txt"   在仓库中，删除test.txt
+git remote add origin git@github.com:Harvey518/repo-name.git   关联一个远程仓库
+git push -u origin master    关联后第一次推送master分支的所有内容
+git push origin master  推送
+git clone git@github.com:Harvey518/gitskills.git   从远程仓库中克隆到本地库
+
